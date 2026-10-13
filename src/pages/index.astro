@@ -1,4 +1,14 @@
 ---
+import "../styles/style.css";
+import { Image } from "astro:assets";
+import logo from "../images/CECAN-Ltd-black.png";
+import hero from "../images/bhautik-patel-rK-MCUCezNk-unsplash.jpg";
+import consultancy from "../images/alvaro-reyes-qWwpHwip31M-unsplash.jpg";
+import mapping from "../images/PRSM screenshot version 2.4.2.png";
+import training from "../images/sincerely-media-dGxOgeXAXm8-unsplash.jpg";
+import examples from "../images/patrick-perkins-ETRPjvb0KM0-unsplash.jpg";
+import Image from "astro/components/Image.astro";
+const year = new Date().getFullYear();
 ---
 
 <html lang="en-GB">
@@ -15,7 +25,10 @@
       content="Evaluation, Research, Policy, Systems Thinking, Social Science, Public Sector, Government, Complex Challenges"
     />
     <meta name="author" content="CECAN Ltd" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <meta name="theme-color" content="#1a4731" />
     <link rel="canonical" href="https://cecan.co.uk/" />
 
@@ -24,8 +37,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/android-chrome-512x512.png"
+    />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -40,8 +63,14 @@
       property="og:description"
       content="CECAN Ltd partners with government bodies, public agencies, and independent organizations to tackle high-stakes, complex social challenges. We bring together systems thinking, flexible evaluation methods, and social science research to unlock practical insights—helping our partners improve policy, align teams, and make confident, evidence-based decisions."
     />
-    <meta property="og:image" content="https://cecan.co.uk/src/images/CECAN-Ltd-black.png" />
-    <meta property="og:image:alt" content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes" />
+    <meta
+      property="og:image"
+      content="https://cecan.co.uk/public/CECAN-Ltd-black.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes"
+    />
     <meta property="og:image:type" content="image/webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="514" />
@@ -56,8 +85,14 @@
       name="twitter:description"
       content="CECAN Ltd partners with government bodies, public agencies, and independent organizations to tackle high-stakes, complex social challenges. We bring together systems thinking, flexible evaluation methods, and social science research to unlock practical insights—helping our partners improve policy, align teams, and make confident, evidence-based decisions."
     />
-    <meta name="twitter:image" content="https://cecan.co.uk/src/images/CECAN-Ltd-black.png" />
-    <meta name="twitter:image:alt" content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes" />
+    <meta
+      name="twitter:image"
+      content="https://cecan.co.uk/public/CECAN-Ltd-black.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes"
+    />
 
     <!-- Structured data -->
     <script type="application/ld+json">
@@ -86,16 +121,17 @@
       }
     </script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@knadh/oat@0.7.1/oat.min.css" />
-    <link rel="stylesheet" href="src/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@knadh/oat@0.7.1/oat.min.css"
+    />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="nav-container">
         <a href="index.html" class="brand-logo">
-          <img src="assets/CECAN-Ltd-black.png" alt="CECAN Ltd logo" width="120" height="40" />
-          CECAN Ltd
+          <img src={logo.src} alt="CECAN Ltd logo" width="120" height="40" />
         </a>
         <button
           type="button"
@@ -115,18 +151,22 @@
             stroke-width="2"
             aria-hidden="true"
           >
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Primary">
           <ul class="nav-menu" id="navMenu">
-            <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+            <li>
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="whatwedo.html" class="nav-link">What we do</a></li>
-            <li><a href="casestudies.html" class="nav-link">Case studies</a></li>
-			<li><a href="contact.html" class="nav-link">Get in touch</a></li>
+            <li>
+              <a href="casestudies.html" class="nav-link">Case studies</a>
+            </li>
+            <li><a href="contact.html" class="nav-link">Get in touch</a></li>
           </ul>
         </nav>
       </div>
@@ -135,182 +175,172 @@
     <main id="main" class="main-content">
       <section class="hero-section" aria-label="Introduction">
         <div class="hero-image-wrapper">
-          <img
-            src="assets/hero.avif"
-            alt="UK terraced homes representing housing retrofit and decarbonisation"
+          <Image
+            src={hero}
+            alt="Two hands holding a small earth globe"
             class="hero-image"
             width="1200"
-            height="514"
+            height="674"
+            loading="eager"
             fetchpriority="high"
             decoding="async"
           />
           <div class="hero-overlay">
-            <h1 class="hero-title">Ask the Retrofit Directory</h1>
+            <h1 class="hero-title">
+              Navigating Complexity to Drive Better Outcomes
+            </h1>
             <p class="hero-subtitle">
-              Find organisations and UK retrofit guidance through a plain-English assistant.
+              CECAN Ltd partners with government bodies, public agencies, and
+              independent organizations to tackle high-stakes, complex social
+              challenges. We bring together systems thinking, flexible
+              evaluation methods, and social science research to unlock
+              practical insights—helping our partners improve policy, align
+              teams, and make confident, evidence-based decisions.
             </p>
           </div>
         </div>
       </section>
+      <section>
+        <div class="grid-cols-1">
+          <div class="info-card">
+            <p>
+              CECAN Ltd partners with government bodies, public agencies, and
+              independent organizations to tackle high-stakes, complex social
+              challenges. We bring together systems thinking, flexible
+              evaluation methods, and social science research to unlock
+              practical insights—helping our partners improve policy, align
+              teams, and make confident, evidence-based decisions.
+            </p>
 
-      <section id="chatbot-help" aria-labelledby="chat-heading">
-        <div id="chat-wrapper">
-          <div id="chat-container">
-            <div id="chat-header">
-              <span id="chat-heading" class="chat-heading-text">Directory Assistant</span>
-              <div
-                type="button"
-                class="chat-heading-btn btn-small-primary "
-                id="btnJoin"
-                aria-label="Add organisation"
-              >
-                Add your organisation
-              </div>
-              <!-- <span class="chat-heading-version">V0.9&beta; 09/26</span> -->
-            </div>
-            <div id="chat-messages" aria-live="polite" aria-relevant="additions"></div>
-            <p id="chat-status" hidden></p>
-            <form id="chat-form" action="#" method="post">
-              <div class="chat-field">
-                <label for="user-input">Your question</label>
-                <input
-                  type="text"
-                  id="user-input"
-                  name="query"
-                  autocomplete="off"
-                  enterkeyhint="send"
-                  maxlength="500"
-                  placeholder="Ask anything about retrofit…"
-                  required
-                />
-              </div>
-              <div class="textarea-side-buttons">
-                <button type="submit" class="btn-small btn-small-primary" id="btnSend">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    aria-hidden="true"
-                  >
-                    <line x1="22" y1="2" x2="11" y2="13" />
-                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                  </svg>
-                  Send
-                </button>
-                <button type="button" class="btn-small btn-small-outline" id="btnCopy">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    aria-hidden="true"
-                  >
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                  </svg>
-                  Copy
-                </button>
-                <button type="button" class="btn-small btn-small-outline" id="btnNew">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                    <line x1="12" y1="8" x2="12" y2="14" />
-                    <line x1="9" y1="11" x2="15" y2="11" />
-                  </svg>
-                  New
-                </button>
-              </div>
-            </form>
+            <p>
+              Complex public policy challenges rarely have simple solutions. At
+              CECAN Ltd, we help government departments, public bodies and
+              partner organisations navigate complexity through innovative
+              evaluation, systems thinking and evidence-informed
+              decision-making.
+            </p>
+
+            <p>
+              Our work combines academic expertise with practical application,
+              supporting clients to understand how policies, programmes and
+              organisations operate within complex systems.
+            </p>
+            <p>
+              By identifying relationships, unintended consequences and
+              opportunities for improvement, we help organisations make more
+              informed decisions with confidence.
+            </p>
+            <p>
+              Whether delivering consultancy, evaluation, training or strategic
+              advice, our aim is always the same: to generate evidence that
+              leads to better outcomes for people, communities and public
+              services.
+            </p>
           </div>
         </div>
-
-        <p class="actions-instruction">
-          Answers can be incomplete or wrong. We have not assessed the quality of the organisations listed. 
-          If you spot an error,
-          <a href="mailto:info@retrofit-directory.org.uk">let us know</a>. 
-        </p>
+      </section>
+      <section>
+        <div class="grid-cols-2">
+          <div class="info-card">
+            <h3>Consultancy</h3>
+            <Image
+              src={consultancy}
+              alt="A person writing on a whiteboard"
+              class="info-image"
+              width="200"
+              height="150"
+              loading="lazy"
+              decoding="async"
+            />
+            <p>
+              We provide expert consultancy services to help organisations
+              navigate complex challenges and make informed decisions.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Expertise</h3>
+            <Image
+              src={examples}
+              alt="A person holding a magnifying glass over a document"
+              class="info-image"
+              width="200"
+              height="150"
+              loading="lazy"
+              decoding="async"
+            />
+            <p>
+              Our team has extensive experience in evaluation, research, and
+              policy analysis, with a focus on complex social challenges.
+            </p>
+          </div>
+        </div>
+        <div class="grid-cols-2">
+          <div class="info-card">
+            <h3>Training</h3>
+			<Image
+			  src={training}
+			  alt="A person giving a presentation to a group of people"
+			  class="info-image"
+			  width="200"
+			  height="150"
+			  loading="lazy"
+			  decoding="async"
+			/>
+            <p>
+              We provide training and development opportunities to help
+              organisations build their capacity and improve their performance.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>System mapping</h3>
+			<Image
+			  src={mapping}
+			  alt="A screenshot of a participatory systems mapping diagram"
+			  class="info-image"
+			  width="200"
+			  height="150"
+			  loading="lazy"
+			  decoding="async"
+			/>
+            <p>
+              We are pioneers in the application of Participatory Systems
+              Mapping (PSM) to appraisal and evaluation.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
-
     <footer class="site-footer">
       <div class="footer-content">
-        <div class="footer-logos">
-          <a href="https://www.inhabithub.org.uk/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="assets/INHABIT_logo_colour.webp"
-              alt="INHABIT: Indoor HABItability during the Transition to Net Zero Housing Hub"
-              class="footer-logo"
-              width="250"
-              height="80"
-              loading="lazy"
-            />
-          </a>
-          <a href="https://www.surrey.ac.uk/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="assets/university_of_surrey.webp"
-              alt="University of Surrey"
-              class="footer-logo"
-              width="250"
-              height="80"
-              loading="lazy"
-            />
-          </a>
-          <a href="https://nationalretrofithub.org.uk/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="assets/nrh-logo_-sml.webp"
-              alt="National Retrofit Hub"
-              class="footer-logo"
-              width="250"
-              height="80"
-              loading="lazy"
-            />
-          </a>
-        </div>
         <p class="footer-text">
-          &copy; 2026 The Retrofit Directory is a project of
-          <a
-            class="footer-highlight"
-            href="https://www.inhabithub.org.uk/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            INHABIT: Indoor HABItability during the Transition to Net Zero Housing Hub
-          </a>
-          .
-          <a href="mailto:info@retrofit-directory.org.uk?subject=Inquiry">Contact Us</a>
+          CECAN Ltd is registered in England and Wales. Company registration
+          number 11489391 | VAT Number 307 9623 89 | &copy; {year} CECAN Ltd
         </p>
       </div>
     </footer>
 
-    <dialog class="privacy-dialog" id="privacyDialog" aria-labelledby="privacyTitle">
+    <dialog
+      class="privacy-dialog"
+      id="privacyDialog"
+      aria-labelledby="privacyTitle"
+    >
       <div class="cookie-content">
         <h2 class="cookie-title" id="privacyTitle">Privacy notice</h2>
         <p class="cookie-text">
-          This site only uses storage that is required for basic functionality (for example
-          remembering this notice).
+          This site only uses storage that is required for basic functionality
+          (for example remembering this notice).
         </p>
       </div>
-      <button type="button" class="cookie-btn" id="acceptCookiesBtn">Got it</button>
+      <button type="button" class="cookie-btn" id="acceptCookiesBtn"
+        >Got it</button
+      >
     </dialog>
 
-    <script type="module" src="./js/app.mjs"></script>
-    <script type="module" src="js/mobilenav.mjs"></script>
+    <script>
+      import "../scripts/mobile-nav.js";
+    </script>
+    <script>
+      import "../scripts/cookie.js";
+    </script>
   </body>
 </html>
