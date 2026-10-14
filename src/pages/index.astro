@@ -1,6 +1,6 @@
 ---
 import "../styles/style.css";
-import logo from "../images/CECAN-Ltd-black.png";
+import logo from "../images/CECAN-Ltd-(web-use).png";
 import hero from "../images/bhautik-patel-rK-MCUCezNk-unsplash.jpg";
 import consultancy from "../images/alvaro-reyes-qWwpHwip31M-unsplash.jpg";
 import mapping from "../images/PRSM screenshot version 2.4.2.png";
@@ -130,12 +130,13 @@ const year = new Date().getFullYear();
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="nav-container">
-        <a href="index.html" class="brand-logo">
+        <a href="index.html">
           <Image
             src={logo}
             alt="CECAN Ltd logo"
             width="120"
-            height="40"
+            height="28"
+            densities={[1, 2, 3]}
             loading="eager"
           />
         </a>
@@ -190,6 +191,7 @@ const year = new Date().getFullYear();
             loading="eager"
             fetchpriority="high"
             decoding="async"
+            layout="full-width"
           />
           <div class="hero-overlay">
             <h1 class="hero-title">
@@ -211,16 +213,27 @@ const year = new Date().getFullYear();
           <div class="info-card">
             <ul class="bullet-list" style={`--bullet: url(${bullet.src})`}>
               <li>
-                Complex public policy challenges rarely have simple solutions. At CECAN Ltd, we help government departments, public bodies and partner organisations navigate complexity through innovative evaluation, systems thinking and evidence-informed decision-making.
+                Complex public policy challenges rarely have simple solutions.
+                At CECAN Ltd, we help government departments, public bodies and
+                partner organisations navigate complexity through innovative
+                evaluation, systems thinking and evidence-informed
+                decision-making.
               </li>
               <li>
-                Our work combines academic expertise with practical application, supporting clients to understand how policies, programmes and organisations operate within complex systems.
+                Our work combines academic expertise with practical application,
+                supporting clients to understand how policies, programmes and
+                organisations operate within complex systems.
               </li>
               <li>
-                By identifying relationships, unintended consequences and opportunities for improvement, we help organisations make more informed decisions with confidence.
+                By identifying relationships, unintended consequences and
+                opportunities for improvement, we help organisations make more
+                informed decisions with confidence.
               </li>
               <li>
-                Whether delivering consultancy, evaluation, training or strategic advice, our aim is always the same: to generate evidence that leads to better outcomes for people, communities and public services.
+                Whether delivering consultancy, evaluation, training or
+                strategic advice, our aim is always the same: to generate
+                evidence that leads to better outcomes for people, communities
+                and public services.
               </li>
             </ul>
           </div>
