@@ -7,7 +7,7 @@ function initCookieNotice() {
 
   if (!(dialog instanceof HTMLDialogElement) || !btnAccept) return;
 
-  const consentGiven = localStorage.getItem("retrofit_cookie_consent");
+  const consentGiven = localStorage.getItem("cecanltd_cookie_consent");
   if (consentGiven) return;
 
   if (typeof dialog.show === "function") {
@@ -17,7 +17,7 @@ function initCookieNotice() {
   }
 
   btnAccept.addEventListener("click", () => {
-    localStorage.setItem("retrofit_cookie_consent", "true");
+    localStorage.setItem("cecanltd_cookie_consent", "true");
     dialog.close();
   });
 }

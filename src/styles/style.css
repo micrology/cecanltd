@@ -475,7 +475,7 @@ main.main-content {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
   padding: 1rem 1.15rem;
-  background: var(--surface-color);
+  background: var(--accent-light);
   color: var(--text-main);
   z-index: 999;
 }
@@ -496,6 +496,7 @@ main.main-content {
 
 .cookie-content {
   flex: 1;
+  padding: 2px;
 }
 
 .cookie-title {
