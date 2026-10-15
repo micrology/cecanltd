@@ -1,183 +1,24 @@
 ---
 import "../styles/style.css";
-import logo from "../images/CECAN-Ltd-(web-use).png";
+
+import Image from "astro/components/Image.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+
 import hero from "../images/bhautik-patel-rK-MCUCezNk-unsplash.jpg";
 import consultancy from "../images/alvaro-reyes-qWwpHwip31M-unsplash.jpg";
 import mapping from "../images/PRSM screenshot version 2.4.2.png";
 import training from "../images/sincerely-media-dGxOgeXAXm8-unsplash.jpg";
 import examples from "../images/patrick-perkins-ETRPjvb0KM0-unsplash.jpg";
 import bullet from "../images/bullet.png";
-import Image from "astro/components/Image.astro";
-const year = new Date().getFullYear();
 ---
 
 <html lang="en-GB">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CECAN Ltd - Navigating Complexity to Drive Better Outcomes</title>
-    <meta
-      name="description"
-      content="CECAN Ltd partners with government bodies, public agencies, and independent organizations to tackle high-stakes, complex social challenges. We bring together systems thinking, flexible evaluation methods, and social science research to unlock practical insights—helping our partners improve policy, align teams, and make confident, evidence-based decisions."
-    />
-    <meta
-      name="keywords"
-      content="Evaluation, Research, Policy, Systems Thinking, Social Science, Public Sector, Government, Complex Challenges"
-    />
-    <meta name="author" content="CECAN Ltd" />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-    <meta name="theme-color" content="#1a4731" />
-    <link rel="canonical" href="https://cecan.co.uk/" />
-
-    <!-- Favicons -->
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/android-chrome-512x512.png"
-    />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="CECAN Ltd" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:url" content="https://cecan.co.uk/" />
-    <meta
-      property="og:title"
-      content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes"
-    />
-    <meta
-      property="og:description"
-      content="CECAN Ltd partners with government bodies, public agencies, and independent organizations to tackle high-stakes, complex social challenges. We bring together systems thinking, flexible evaluation methods, and social science research to unlock practical insights—helping our partners improve policy, align teams, and make confident, evidence-based decisions."
-    />
-    <meta
-      property="og:image"
-      content="https://cecan.co.uk/public/CECAN-Ltd-black.png"
-    />
-    <meta
-      property="og:image:alt"
-      content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes"
-    />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="514" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes"
-    />
-    <meta
-      name="twitter:description"
-      content="CECAN Ltd partners with government bodies, public agencies, and independent organizations to tackle high-stakes, complex social challenges. We bring together systems thinking, flexible evaluation methods, and social science research to unlock practical insights—helping our partners improve policy, align teams, and make confident, evidence-based decisions."
-    />
-    <meta
-      name="twitter:image"
-      content="https://cecan.co.uk/public/CECAN-Ltd-black.png"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="CECAN Ltd - Navigating Complexity to Drive Better Outcomes"
-    />
-
-    <!-- Structured data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://cecan.co.uk/#website",
-            "name": "CECAN Ltd",
-            "url": "https://cecan.co.uk/",
-            "description": "CECAN Ltd partners with government bodies, public agencies, and independent organizations to tackle high-stakes, complex social challenges.",
-            "inLanguage": "en-GB",
-            "publisher": { "@id": "https://cecan.co.uk/#organization" }
-          },
-          {
-            "@type": "Organization",
-            "@id": "https://cecan.co.uk/#organization",
-            "name": "CECAN Ltd",
-            "url": "https://cecan.co.uk/",
-            "email": "info@cecan.co.uk",
-            "description": "CECAN Ltd partners with government bodies, public agencies, and independent organizations to tackle high-stakes, complex social challenges.",
-            "logo": "https://cecan.co.uk/src/images/CECAN-Ltd-black.png"
-          }
-        ]
-      }
-    </script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@knadh/oat@0.7.1/oat.min.css"
-    />
-  </head>
+<Head /> 
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="nav-container">
-        <a href="index.html">
-          <Image
-            src={logo}
-            alt="CECAN Ltd logo"
-            width="120"
-            height="28"
-            densities={[1, 2, 3]}
-            loading="eager"
-          />
-        </a>
-        <button
-          type="button"
-          class="mobile-nav-toggle"
-          id="mobileNavToggle"
-          aria-label="Open menu"
-          aria-controls="navMenu"
-          aria-expanded="false"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            aria-hidden="true"
-          >
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
-        <nav class="site-nav" id="siteNav" aria-label="Primary">
-          <ul class="nav-menu" id="navMenu">
-            <li>
-              <a href="index.html" class="nav-link" aria-current="page">Home</a>
-            </li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="whatwedo.html" class="nav-link">What we do</a></li>
-            <li>
-              <a href="casestudies.html" class="nav-link">Case studies</a>
-            </li>
-            <li><a href="contact.html" class="nav-link">Get in touch</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <Navigation link="index" />
 
     <main id="main" class="main-content">
       <section class="hero-section" aria-label="Introduction">
@@ -302,37 +143,6 @@ const year = new Date().getFullYear();
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p class="footer-text">
-          CECAN Ltd is registered in England and Wales. Company registration
-          number 11489391 | VAT Number 307 9623 89 | &copy; {year} CECAN Ltd
-        </p>
-      </div>
-    </footer>
-
-    <dialog
-      class="privacy-dialog"
-      id="privacyDialog"
-      aria-labelledby="privacyTitle"
-    >
-      <div class="cookie-content">
-        <h2 class="cookie-title" id="privacyTitle">Privacy notice</h2>
-        <p class="cookie-text">
-          This site only uses storage that is required for basic functionality
-          (for example remembering this notice).
-        </p>
-      </div>
-      <button type="button" class="cookie-btn" id="acceptCookiesBtn"
-        >Got it</button
-      >
-    </dialog>
-
-    <script>
-      import "../scripts/mobile-nav.js";
-    </script>
-    <script>
-      import "../scripts/cookie.js";
-    </script>
+    <Footer />
   </body>
 </html>
