@@ -253,6 +253,12 @@ main.main-content {
     grid-template-columns: 1fr;
   }
 }
+.bio-type {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: var(--space-6);
+}
 
 .info-card {
   background: var(--surface-color);
