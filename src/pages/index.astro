@@ -5,8 +5,9 @@ import Image from "astro/components/Image.astro";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
+import Hero from "../components/Hero.astro";
 
-import hero from "../images/bhautik-patel-rK-MCUCezNk-unsplash.jpg";
+import wrapped_earth from "../images/bhautik-patel-rK-MCUCezNk-unsplash.jpg";
 import consultancy from "../images/alvaro-reyes-qWwpHwip31M-unsplash.jpg";
 import mapping from "../images/PRSM screenshot version 2.4.2.png";
 import training from "../images/sincerely-media-dGxOgeXAXm8-unsplash.jpg";
@@ -21,32 +22,14 @@ import bullet from "../images/bullet.png";
     <Navigation link="index" />
 
     <main id="main" class="main-content">
-      <section class="hero-section" aria-label="Introduction">
-        <div class="hero-image-wrapper">
-          <Image
-            src={hero}
-            alt="Two hands holding a small earth globe"
-            class="hero-image"
-            width="1200"
-            height="674"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-            layout="full-width"
-          />
-          <div class="hero-overlay">
-            <h1 class="hero-title">
-              Supporting decision-makers in a complex world
-            </h1>
-            <p class="hero-subtitle">
-              We bring together systems thinking, flexible evaluation methods,
-              and social science research to unlock practical insights—helping
-              our partners improve policy, align teams, and make confident,
-              evidence-based decisions. 
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero image={wrapped_earth} alt="A wrapped earth">
+        <p>
+          We bring together systems thinking, flexible evaluation
+          methods, and social science research to unlock practical insights,
+          helping our partners improve policy, align teams, and make confident,
+          evidence-based decisions.
+        </p>
+      </Hero>
       <section>
         <div class="grid-cols-1">
           <div class="info-card">
