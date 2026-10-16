@@ -1,0 +1,18 @@
+---
+interface Props {
+  projectName: string;
+  client: string;
+  team: string;
+}
+
+const { projectName, client, team } = Astro.props;
+---
+
+<h2>
+  {projectName}
+</h2>
+<p>
+  <p><b>Client</b>: {client} </p>
+  <p><b>Project Team</b>: {team}</p>
+</p>
+<slot />

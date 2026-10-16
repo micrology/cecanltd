@@ -1,0 +1,357 @@
+---
+import "../styles/style.css";
+
+import casestudies from "../images/sincerely-media-dGxOgeXAXm8-unsplash.jpg";
+import Navigation from "../components/Navigation.astro";
+import Head from "../components/Head.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+import Project from "../components/Project.astro";
+
+import bullet from "../images/bullet.png";
+---
+
+<html lang="en-GB">
+  <Head />
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <Navigation link="casestudies" />
+
+    <main id="main" class="main-content">
+      <Hero image={casestudies} alt="A class in progress">
+        <p>
+          At CECAN Ltd, we work across a range of policy areas, helping
+          organisations understand complexity and make evidence-informed
+          decisions through innovative evaluation methods. Our work bridges
+          research and practice, ensuring evidence is translated into actionable
+          insights that support better decision-making.
+        </p>
+      </Hero>
+      <section>
+        <div class="grid-cols-1">
+          <div class="info-card">
+            <h1 id="case-studies">Case studies</h1>
+            <p>
+              We have wide experience of working across UK government
+              departments and agencies on small and large projects, delivered
+              solely by CECAN or collaboratively with partners. Some of our
+              recent projects are summarised below. Many others are confidential
+              to the client.
+            </p>
+            <Project
+              projectName="Mapping government’s actions to deliver Thriving Plants and Wildlife"
+              client="Office for Environmental Protection (OEP)"
+              team="CECAN Ltd with ICF Consulting Services Ltd (lead) and Matthew Baumann Associates"
+            >
+              <p>
+                This project aims to improve understanding of the government’s
+                intended path to delivery of its Thriving Plants and Wildlife
+                Goal (TPW) and was commissioned to enhance OEPs ability to
+                review and assess government action for nature. TPW is the apex
+                goal of the Environmental Improvement Plan 2023 for England
+                (EIP). The project has reviewed, collated and structured
+                information about the diverse actions the UK government have
+                committed to taking in the delivery of the Thriving Plants and
+                Wildlife (TPW) goal into a searchable catalogue. The catalogue
+                has been used to develop diagrammatic products to help OEP to
+                understand the progress of policy development and implementation
+                and the distribution of responsibility for delivery. Together
+                these products are intended to support OEP’s future monitoring
+                and evaluation of government’s progress and delivery and assist
+                it its role of holding the government to account in this area.
+              </p>
+              <p>
+                The final report from the project, Policy Mapping Thriving
+                Plants Wildlife Final Report, informed the OEP annual progress
+                report Progress in improving the natural environment in England
+                2022/2023 and was published alongside it in January 2024.
+              </p>
+            </Project>
+
+            <Project
+              projectName="Developing an Environmental Policy System Review Tool"
+              client="Office for Environmental Protection (OEP)"
+              team="CECAN Ltd with ICF Consulting Services Ltd (lead) and Matthew Baumann Associates"
+            >
+              <p>
+                This project was a follow up to the Mapping government’s actions
+                to deliver Thriving Plants and Wildlife and built on this work.
+                It aimed to develop a tool for mapping and reviewing policy
+                systems, which could be applied to any specific area of an EIP,
+                and which could be used to inform OEP assessment of policy
+                progress.
+              </p>
+              <p>
+                The project developed the ‘Environmental Policy System Review’
+                (EPSR) tool and tested it by applying it to the Environment Land
+                Management policy in England. The EPSR includes a framework of
+                six components of a policy system and evaluative criteria that
+                can be used to assess the quality of the policy system in place
+                for a specified goals. An 8-step process for applying the tool
+                was developed, involving document analysis and iterative
+                stakeholder engagement. The EPSR was tested on the case of
+                Environmental Land Management, highlighting strengths and
+                weaknesses affecting its delivery. Conclusions about the EPSR
+                and its future use in OEP assessments are also offered.
+              </p>
+              <p>
+                The final report from the project Developing an Environmental
+                Policy System Review Tool Final Report was one of a series
+                contractor report informing the 2025 the OEP annual progress
+                report Progress in improving the natural environment in England
+                2023/2024 and was published alongside it in January 2025.
+              </p>
+            </Project>
+            <Project
+              projectName="Green choices in the UK food system"
+              client="Office for Environmental Protection (OEP)"
+              team="CECAN Ltd (lead) with TABLE, University of Oxford"
+            >
+              <p>
+                The aim of this project was to support the Office for
+                Environmental Protection (OEP) to comment on the application of
+                the green choices principles of the Environmental Improvement
+                Plan 2023 (EIP23) in the context of a sustainable food system. A
+                rapid review was conducted between August and October 2024 to
+                assess the extent to which the Government Food Strategy, and the
+                actions it contains, embodies the green choices principles. A
+                small selection of key wider documentary sources was then
+                reviewed to identify actions that could be used to strengthen
+                expressions of the green choices principles in the Government
+                Food Strategy.
+              </p>
+              <p>
+                The review’s approach allowed a large body of material to be
+                reviewed, providing structure to it and capturing a broad set of
+                actions which could strengthen the expressions of principles in
+                the Government Food Strategy. It has also provided insights on
+                how policy in such complex, interlinked areas needs to be
+                developed and the role principles can play relevant to wider
+                policy areas.
+              </p>
+              <p>
+                The final report from the project Green choices in the UK food
+                system was one of a series contractor report informing the 2025
+                the OEP annual progress report Progress in improving the natural
+                environment in England 2023/2024 and was published alongside it
+                in January 2025
+              </p>
+            </Project>
+            <Project
+              projectName="Evaluation of the Safe and Sound Cities Programme"
+              client="Fondation Botnar"
+              team="CECAN Ltd and IOD PARC Ltd (Lead)"
+            >
+              <p>
+                The Safe and Sound Cities (S2Cities) Programme aims to improve
+                young people’s safety and wellbeing in urban environments
+                through youth-led innovation. Focusing on young people between
+                the ages of 15 and 24, the programme takes a holistic and
+                relational approach to wellbeing, placing young people at the
+                centre of decision-making, contributing with knowledge creation,
+                while recognising that public authorities are also an integral
+                part to achieving system change. The evaluation was commissioned
+                to provide an independent formative review of the S2Cities
+                (phase I), focusing on the programme’s two pilot cities of
+                Envigado in Colombia and Bandung in Indonesia. With a strong
+                emphasis on forward looking recommendations, the evaluation is
+                intended to generate learnings to inform the potential scaling
+                up of the programme for the following phases which aims to carry
+                out the 10-year worldwide initiative in 10 secondary cities
+                located in 6 low-and middle-income countries (LMICs) across
+                Southeast Asia, Latin America, and potentially Africa.
+              </p>
+            </Project>
+            <Project
+              projectName="UKRI Strategic Priorities Fund"
+              client="UKRI"
+              team="CECAN Ltd with Technopolis Ltd"
+            >
+              <p>
+                CECAN Ltd is currently working with Technopolis Ltd (and is
+                commissioned until 2025) to carry out an independent evaluation
+                of UKRI’s key investment, the SPF. The SPF is a diverse
+                portfolio of programmes with different themes and funding
+                bodies. The aim of the evaluation is to inform ongoing and
+                future improvements of the fund, to maximise the value of public
+                funding (in particular, the possibility of future growth of the
+                SPF), to demonstrate what the fund delivered for taxpayers and
+                to help UKRI build the evidence base on ‘what works’. The
+                evaluation is being undertaken over four phases with discrete
+                deliverables, including evaluation reports that effectively
+                capture evidence as the project progresses. Accordingly, each
+                subsequent report adds to the overall evidence base for the
+                evaluation.
+              </p>
+            </Project>
+            <Project
+              projectName="Complexity Evaluation Framework"
+              client="Digital Catapult"
+              team="CECAN Ltd"
+            >
+              <p>
+                CECAN Ltd has worked with the Digital Catapult in the early
+                development stages of a new evaluation framework that will be
+                implemented for the next Grant Funding Agreement between
+                Innovate UK and Digital Catapult (beginning in 2023).
+                Ultimately, the Digital Catapult is looking to create a
+                framework that captures the longer term ‘indirect’ impacts and
+                wider intangible economic benefits that are generated as a
+                consequence of its interventions. Through a series of online
+                workshops, our team identified the best ideas and approaches
+                that most effectively reflect the complexity of the Catapult and
+                its role within the innovation system. This provided an
+                opportunity for Digital Catapult to reassess its approach to
+                evaluation and to explore the potential of new approaches that
+                more accurately reflect the complex and dynamic nature of
+                Catapults more broadly.
+              </p>
+            </Project>
+            <Project
+              projectName="Theory of Change Tool"
+              client="Defra"
+              team="CECAN Ltd with Technopolis Ltd"
+            >
+              <p>
+                Between January and July 2021, CECAN Ltd worked with Technopolis
+                Ltd to design a bespoke ToC tool for the Department for
+                Environment, Food and Rural Affairs (Defra) to assist in the
+                design and delivery of evaluation of its complex policies. Defra
+                wanted to be able to capture linkages between activities,
+                outputs and outcomes, to assist in policy evaluation and
+                implement the Public Value Framework approach. We contributed to
+                the design of a practical tool that enables Defra teams to
+                generate robust and dynamic Theories of Change for the
+                evaluation of programmes and strategies across Defra’s complex
+                policy remit. Informed by a review of existing tools and
+                literature on ToC and complexity aware evaluation, including the
+                aforementioned CEF, the Defra ToC tool provides clear
+                accountability on how initiatives will deliver and measure
+                outcomes, including metric development.
+              </p>
+            </Project>
+            <Project
+              projectName="Complexity Evaluation Framework"
+              client="Defra"
+              team="CECAN Ltd"
+            >
+              <p>
+                On the 5th June 2019, CECAN Ltd presented a first look at the
+                new Complexity Evaluation Framework (Version 1) to an audience
+                of policy-makers, analysts and commissioners in the Department
+                for Environment, Food and Rural Affairs (Defra).
+              </p>
+              <p>
+                The framework was commissioned by Defra and delivered by CECAN
+                Ltd. Written for analysts and policy-makers who are involved in
+                planning, commissioning, managing and/or delivering evaluation,
+                the framework aims to ensure that complexity thinking is
+                consistently embedded into evaluation – to equip its users with
+                a checklist of core considerations to ensure that evaluations
+                are robust and sufficiently consider the implications of
+                complexity.
+              </p>
+              <p>
+                The workshop included a discussion with Roisin O’Brien
+                (Principal Social Researcher – Resources and Waste Evidence) and
+                Tom Pye (Senior Policy Advisor – Resources, Waste and Plastics
+                Strategy), hosted by CECAN Deputy Director Ben Shaw.
+              </p>
+              <p>
+                CECAN Ltd successfully delivered the new Complexity Evaluation
+                Framework (Version 1), which can be accessed and downloaded on
+                the Defra website.
+              </p>
+            </Project>
+            <Project
+              projectName="Systems Analysis for Water Resources"
+              client="Defra"
+              team="CECAN Ltd with Mott MacDonald"
+            >
+              <p>
+                Between October 2019 and September 2020, CECAN Senior Research
+                Fellows Dr Alex Penn and Dr Pete Barbrook-Johnson worked with
+                Mott Macdonald on the ‘Systems Analysis for Water Resources’
+                project funded by Defra. The project used CECAN’s Participatory
+                Systems Mapping approach to explore how whole systems and
+                complexity-appropriate approaches can be used to provide insight
+                on, and inform management of, river catchments. The project work
+                took place in the Eden river catchment in Cumbria and the Medway
+                in Kent, to develop systems maps of these catchments. These maps
+                were co-produced and used with local stakeholders, and informed
+                wider learning for Defra on how these approaches can work at the
+                catchment level.
+              </p>
+              <p>
+                ”They [Mott Macdonald] have ensured the project team includes
+                experts from CECAN, who are also pivotal to the success of the
+                project. The genuine interest in the project and desire from the
+                Mott MacDonald and CECAN team to push the boundaries of what has
+                been done before has added real value to the project. The
+                creative ideas and suggestions of how to improve the approach as
+                well as the great efforts they go to build excellent
+                relationships with the participants of the research has been
+                very much appreciated.” Defra
+              </p>
+            </Project>
+            <Project
+              projectName="Design of an Evaluation Framework for Biodiversity Net Gain in
+              England"
+              client="Defra"
+              team="CECAN Ltd with Collingwood Environmental Planning"
+              >
+            <p>
+              CECAN Ltd, with Collingwood Environmental Planning Ltd, BSG
+              Ecology, Geodata Institute, and Vivid Economics, was commissioned
+              by Natural England on behalf of Defra to undertake a project to
+              design an evaluation framework for Biodiversity Net Gain (BNG) in
+              England. The aim of mandatory BNG policy, as set out in the 2020
+              Environment Bill, is to secure a measurable improvement in habitat
+              for biodiversity whilst streamlining the planning process and
+              creating better places for local communities. The purpose of the
+              framework is to enable Natural England and Defra to evaluate how
+              BNG is being delivered and understand the impact (environmental,
+              social, and economic) of the BNG policy.
+            </p>
+            </Project>
+            <Project
+              projectName="Evaluation of the Forces Connect South East – Veterans’ Hub Project"
+              client="Surrey County Council"
+              team="CECAN Ltd"
+            >
+            <p>
+              Between January and October 2020 CECAN Ltd (Dr Ananya Mukherjee)
+              undertook an evaluation and review of the Forces Connect South
+              East – Veterans’ Hub Project. The project was funded by the Armed
+              Forces Covenant Fund and led by Surrey County Council who
+              commissioned CECAN Ltd to draft an external evaluation report,
+              compiled utilising a range of techniques, in order to identify how
+              effective the project had been in delivering against its stated
+              outcomes and milestones using a theory-based evaluation method.
+              The evaluation of the Forces Connect South East – Veterans’ Hub
+              (FCSE-VH) Project aimed to assess the efficacy and impact of the
+              project through the various engagement and outreach activities
+              aimed at strengthening support to local veterans through the
+              identification of need and current provision, developing best
+              practice and enhancing the current offer through the creation of
+              potential new hubs and sustaining existing ones, where there was a
+              proven need for additional funds. Dr Ananya Mukherjee was Lead
+              Consultant on behalf of CECAN Ltd. The project was carried out
+              within the local authority areas of Surrey, Kent, Hampshire, East
+              Sussex and West Sussex County Councils, and Brighton &amp; Hove
+              and Medway Councils. Qualitative data analysis methods were used
+              to evaluate and highlight the work of the FCSE-VH’s work in
+              facilitating the smooth transition of ex-service personnel into
+              civilian life as well as supporting veterans who have previously
+              served in the armed forces.
+            </p>
+          </Project>
+        </div>
+
+          <Footer />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
