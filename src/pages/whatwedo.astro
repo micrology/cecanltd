@@ -1,0 +1,124 @@
+---
+import "../styles/style.css";
+
+import examples from "../images/patrick-perkins-ETRPjvb0KM0-unsplash.jpg";
+import Navigation from "../components/Navigation.astro";
+import Head from "../components/Head.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+
+import bullet from "../images/bullet.png";
+---
+
+<html lang="en-GB">
+  <Head />
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <Navigation link="whatwedo" />
+
+    <main id="main" class="main-content">
+      <Hero image={examples} alt="A borad of post-it notes">
+        <p>
+          At CECAN Ltd, we work across a range of policy areas, helping
+          organisations understand complexity and make evidence-informed
+          decisions through innovative evaluation methods. Our work bridges
+          research and practice, ensuring evidence is translated into actionable
+          insights that support better decision-making.
+        </p>
+      </Hero>
+      <section>
+        <div class="grid-cols-1">
+          <div class="info-card">
+            <h1>Our Services</h1>
+
+            <h2>Consultancy</h2>
+            <p>
+              Working alongside government departments, public bodies and
+              research organisations, we provide independent advice,
+              facilitation and evaluation across a wide range of policy areas.
+            </p>
+            <ul class="bullet-list" style={`--bullet: url(${bullet.src})`}>
+              <li>
+                <h3>Complexity-informed Evaluation</h3>
+                <p>
+                  We design and deliver evaluations that recognise the
+                  interconnected nature of today’s policy challenges, helping
+                  organisations understand not only whether something works, but
+                  how and why outcomes emerge.
+                </p>
+              </li>
+              <li>
+                <h3>Systems Thinking</h3>
+                <p>
+                  Our systems-based approaches help identify relationships,
+                  feedback loops and wider influences that shape policy and
+                  programme outcomes.
+                </p>
+                <p>
+                  We have a particular expertise in Participatory Systems
+                  Mapping and related systems thinking approaches but can offer
+                  the full range of methods and approaches outlined in the
+                  CECAN-authored <i>Handling Complexity in Policy Evaluation</i> (a
+                  supplementary guide to the <i>Magenta Book</i>, the
+                  government’s guide to policy evaluation).
+                </p>
+              </li>
+              <li>
+                <h3>Policy Appraisal</h3>
+                <p>
+                  We support organisations in designing, reviewing and improving
+                  policies through robust analytical approaches and practical
+                  recommendations.
+                </p>
+              </li>
+            </ul>
+
+            <h2>Training and Capacity Building</h2>
+            <p>
+              We offer bespoke training and coaching to help organisations
+              develop systems thinking and complexity-informed evaluation skills
+              in practice.
+            </p>
+
+            <ul class="bullet-list" style={`--bullet: url(${bullet.src})`}>
+              <li>
+                <h3>Bespoke training courses</h3><p>
+                  We design and deliver bespoke training for organisations,
+                  targeting their individual needs in mode of delivery and
+                  content. We provide an effective route for training staff that
+                  can be carried out at your location or online. Delivering
+                  training at your location reduces delegates’ travel time and
+                  cost, while using an online platform offers a flexible
+                  approach if delegates are geographically dispersed. With an
+                  audience of similar needs we can tailor the course to their
+                  specific field or problem, ensuring the training is translated
+                  into practice with ease. Please <a
+                    href="mailto:training@cecan.co.uk">get in touch</a
+                  > if you would like further details.
+                </p>
+              </li>
+              <li>
+                <h3>Bespoke Coaching</h3><p>
+                  In addition to our training offer, our evaluation experts are
+                  able to offer bespoke coaching sessions for smaller groups: we
+                  usually recommend about five people. The sessions can form
+                  part of a bigger bespoke training package, or run as a
+                  stand-alone series if preferred. They provide an opportunity
+                  for participants to work very closely with one or two of our
+                  carefully matched evaluation experts in a very focussed and
+                  practical way. Sessions are delivered online at times that are
+                  convenient to you, subject to our coaches’ availability.
+                  Please <a href="mailto:training@cecan.co.uk">get in touch</a> if
+                  you would like further details.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <Footer />
+      </section>
+    </main>
+  </body>
+</html>
