@@ -39,14 +39,17 @@ import baumann from "../images/portraits/baumann.webp";
     <Navigation link="about" />
 
     <main id="main" class="main-content">
-      <Hero image={consultancy} alt="A hand stringing together a flow chart of sticky notes">
+      <Hero
+        image={consultancy}
+        alt="A hand stringing together a flow chart of sticky notes"
+      >
         <p>
           CECAN Ltd is the commercial consultancy arm of the ESRC funded <a
             href="https://cecan.ac.uk"
             style="color:white"
             >Centre for the Evaluation of Complexity Across the Nexus</a
-          > (CECAN). We offer access to innovative policy evaluation approaches
-          and methods to support decision makers.
+          > (CECAN). We offer access to innovative policy evaluation approaches and
+          methods to support decision makers.
         </p>
       </Hero>
       <section class="page-header-card">
@@ -196,105 +199,26 @@ import baumann from "../images/portraits/baumann.webp";
         </div>
         <h1 class="bio-type">Associates</h1>
         <div class="grid-cols-3">
-          <Bio image={wilkinson} name="Helen Wilkinson" title="Associate">
+          <Bio image={allen} name="Richard Allen" title="Associate">
             <p>
-              Helen is a director of Risk Solutions’ with over 25 years’
-              consulting experience working in areas where there are high
-              degrees of uncertainty, complexity or risk. Her work has included
-              support to policy formulation, development of management systems,
-              and all aspects of evaluation and review. She has worked at senior
-              levels for the UK government, reporting for example directly to
-              ministers in Defra. Helen was a member of the CECAN team who
-              developed the new supplementary guide on handling complexity in
-              policy evaluation for HMTs Magenta Book: Guidance on Evaluation.
-              She has a special interest in developing system-based theories of
-              change.
+              Until recently Richard was a Principal Researcher and Consultant
+              at the Tavistock Institute. He is now an independent
+              researcher/consultant. He has worked for more than thirty years in
+              the not for profit/NGO and public sectors in a range of roles that
+              include senior management, consultancy, evaluation, project
+              management, quality management and grants management. He has
+              expertise in the evaluation, and programme management, of
+              multi-site complex programmes in the ‘public sector. This
+              includes: work, in partnership with Risk Solutions, on the real
+              time theory-based evaluation of UK government (BEIS) heat network
+              investment project. Richard has worked with CECAN, since 2021, as
+              a tutor for the Handling Complexity series of seminars. He has
+              also been part of a team providing bespoke training and coaching
+              for government departmental evaluation teams seeking to apply
+              complexity informed evaluation to programmes. Among his
+              qualifications is an MPhil on Theory of Change use in complexity.
             </p>
-          </Bio>
-          <Bio image={brand} name="Paul Brand" title="Associate">
-            <p>
-              Paul Brand is a Director at Risk Solutions. He specialises in
-              complex assignments requiring the combination of technical
-              understanding with the ability to bring together diverse
-              stakeholder groups. He has experience presenting and liaising with
-              senior policy makers, including reporting at Ministerial level. An
-              engineer by training, he has an extensive background in risk
-              management as well as strong IT and data analysis skills. He has
-              in-depth experience in the transport, environmental, power, water
-              and third sectors, with some activity in healthcare and local
-              government. Paul spent nine years managing organisational
-              development (OD) and change for an international charity,
-              including five years based in their HQ in Singapore, working on
-              worldwide changes to their governance, finance, HR and pensions.
-              He has studied organisational development with NTL, a top USA
-              provider of OD and he is a Certified Professional Facilitator
-              (CPF) with the International Association of Facilitators (IAF). He
-              has a special interest and experience in long-term engagements
-              across entire sectors or multi-organisation communities.
-            </p>
-          </Bio>
-          <Bio image={penn} name="Alexandra (Alex) Penn" title="Associate">
-            <p>
-              Alex is a complexity scientist with an academic background in
-              evolutionary ecology, computer science and physics, plus
-              substantial experience in complex systems design approaches. She
-              combines participatory methods and mathematical models to create
-              tools for stakeholders to understand and “steer” their complex
-              systems. She co-developed (with Peter Barbrook-Johnson) the
-              participatory systems mapping methodology used by CECAN and
-              continues to innovate new mapping and analysis methods to make
-              complexity actionable in different real-world contexts. She has
-              worked with a wide variety of policy, civil society and industrial
-              stakeholders. In particular in Defra group, BEIS, DfT, and in
-              regional industrial economies and catchment systems.
-            </p>
-          </Bio>
-          <Bio image={hejnowicz} name="Adam Hejnowicz" title="Associate">
-            <p>
-              Dr Adam Peter Hejnowicz, Lecturer in Climate Change Adaptation,
-              and Programme Director and Cohort Lead MSc in Carbon Management,
-              School of Geosciences, University of Edinburgh. Adam is an
-              interdisciplinary social-ecological scientist who has worked at
-              the intersection of environment, development and sustainability
-              issues since 2008. His applied, policy-facing, and
-              transdisciplinary research concerns the sustainability and
-              governance of complex social-ecological systems, and draws on
-              mixed method approaches and plural epistemologies. Adam has
-              undertaken research in the UK (agri-environment, rural
-              development, and post-Brexit policy), Asia (climate adaptation and
-              governance in Asian mega-deltas in India and Vietnam), sub-
-              Saharan Africa (urban climate resilience and coastal ecosystem
-              services in Kenya, Namibia andTanzania) and Latin America
-              (biodiversity conservation and community education in Ecuador and
-              Costa Rica). Throughout his career, Adam’s research has involved
-              engaging with local, regional, and national government agencies,
-              departments and ministries; community-based organizations; local,
-              national and international NGOs as well as multilateral donors and
-              intergovernmental organizations. Adam read Biochemistry and
-              Biology at the University of Keele, and holds Master’s degrees in
-              Integrative Bioscience from the University of Oxford and Ecology
-              and Environmental Management from the University of York. He holds
-              a PhD in Environmental Economics and Environmental Management also
-              from the University of York. Prior to joining the University of
-              Edinburgh, he held postdoctoral positions at the Universities of
-              York, Sheffield and Newcastle.
-            </p>
-          </Bio>
-          <Bio image={roberts} name="Tom Roberts" title="Associate">
-            <p>
-              Dr Thomas Roberts is an environmental sociologist and founding
-              Co-director of the Institute for Sustainability at the University
-              of Surrey. His research who focuses on public perceptions and
-              understanding of environmental policy interventions. He has
-              extensive experience of using a wide range of qualitative research
-              methods to evaluate environmental policy. In particular he is
-              interested in exploring the implications of climate change for
-              healthcare, the skills and training required to facilitate the
-              transition to a zero-carbon economy and consumption and waste
-              disposal practices.
-            </p>
-          </Bio>
-          <Bio
+          </Bio><Bio
             image={barbrook_johnson}
             name="Pete Barbrook-Johnson"
             title="Associate"
@@ -333,6 +257,86 @@ import baumann from "../images/portraits/baumann.webp";
               at the University of Surrey in 2014.
             </p>
           </Bio>
+          <Bio image={baumann} name="Matt Baumann" title="Associate">
+            <p>
+              Matt Baumann is an Independent Evaluation Consultant. He helps
+              consultancies and research firms delivering evaluations, often for
+              Central Government, to embed complexity concepts in evaluation
+              strategies and use a wider range of evaluation tools in their
+              approaches to ensure more robust and useful evaluations. He has 30
+              years’ experience in research and evaluation across a range of
+              sectors including health, social care, justice, housing, energy
+              and the environment. His career includes research and evaluation
+              roles in local authorities, two central government departments
+              (ODPM and DECC), academia (Kings College London) and two think
+              tanks (NESTA and the Centre for Ageing Better). During 2012-2016
+              he played a key role in the development of Department of Energy
+              and Climate Change’s evaluation culture and systems, and in
+              particular the valuing of complexity sensitive methods and
+              approaches alongside more traditional and better known methods.
+              This in turn contributed to gaining support from within the
+              Department for the establishment of CECAN. Since becoming
+              independent in 2019 he has played a key role in the design and
+              delivery of around 25 evaluation assignments including for
+              BEIS/DESNZ, DEFRA, Natural England, MHCLG, the Office for
+              Environmental Protection and the Youth Endowment Fund. He has
+              worked with CECAN on several assignments including for example the
+              development of DEFRA’s Theory of Change Toolkit.
+            </p>
+          </Bio>
+          <Bio image={brand} name="Paul Brand" title="Associate">
+            <p>
+              Paul Brand is a Director at Risk Solutions. He specialises in
+              complex assignments requiring the combination of technical
+              understanding with the ability to bring together diverse
+              stakeholder groups. He has experience presenting and liaising with
+              senior policy makers, including reporting at Ministerial level. An
+              engineer by training, he has an extensive background in risk
+              management as well as strong IT and data analysis skills. He has
+              in-depth experience in the transport, environmental, power, water
+              and third sectors, with some activity in healthcare and local
+              government. Paul spent nine years managing organisational
+              development (OD) and change for an international charity,
+              including five years based in their HQ in Singapore, working on
+              worldwide changes to their governance, finance, HR and pensions.
+              He has studied organisational development with NTL, a top USA
+              provider of OD and he is a Certified Professional Facilitator
+              (CPF) with the International Association of Facilitators (IAF). He
+              has a special interest and experience in long-term engagements
+              across entire sectors or multi-organisation communities.
+            </p>
+          </Bio>
+          <Bio image={hejnowicz} name="Adam Hejnowicz" title="Associate">
+            <p>
+              Dr Adam Peter Hejnowicz, Lecturer in Climate Change Adaptation,
+              and Programme Director and Cohort Lead MSc in Carbon Management,
+              School of Geosciences, University of Edinburgh. Adam is an
+              interdisciplinary social-ecological scientist who has worked at
+              the intersection of environment, development and sustainability
+              issues since 2008. His applied, policy-facing, and
+              transdisciplinary research concerns the sustainability and
+              governance of complex social-ecological systems, and draws on
+              mixed method approaches and plural epistemologies. Adam has
+              undertaken research in the UK (agri-environment, rural
+              development, and post-Brexit policy), Asia (climate adaptation and
+              governance in Asian mega-deltas in India and Vietnam), sub-
+              Saharan Africa (urban climate resilience and coastal ecosystem
+              services in Kenya, Namibia andTanzania) and Latin America
+              (biodiversity conservation and community education in Ecuador and
+              Costa Rica). Throughout his career, Adam’s research has involved
+              engaging with local, regional, and national government agencies,
+              departments and ministries; community-based organizations; local,
+              national and international NGOs as well as multilateral donors and
+              intergovernmental organizations. Adam read Biochemistry and
+              Biology at the University of Keele, and holds Master’s degrees in
+              Integrative Bioscience from the University of Oxford and Ecology
+              and Environmental Management from the University of York. He holds
+              a PhD in Environmental Economics and Environmental Management also
+              from the University of York. Prior to joining the University of
+              Edinburgh, he held postdoctoral positions at the Universities of
+              York, Sheffield and Newcastle.
+            </p>
+          </Bio>
           <Bio image={parry_cooke} name="Georgie Parry-Cooke" title="Associate">
             <p>
               Georgie Parry-Crooke is an independent, experienced facilitator,
@@ -352,42 +356,20 @@ import baumann from "../images/portraits/baumann.webp";
               Evaluation Society.
             </p>
           </Bio>
-          <Bio image={allen} name="Richard Allen" title="Associate">
+          <Bio image={penn} name="Alexandra (Alex) Penn" title="Associate">
             <p>
-              Until recently Richard was a Principal Researcher and Consultant
-              at the Tavistock Institute. He is now an independent
-              researcher/consultant. He has worked for more than thirty years in
-              the not for profit/NGO and public sectors in a range of roles that
-              include senior management, consultancy, evaluation, project
-              management, quality management and grants management. He has
-              expertise in the evaluation, and programme management, of
-              multi-site complex programmes in the ‘public sector. This
-              includes: work, in partnership with Risk Solutions, on the real
-              time theory-based evaluation of UK government (BEIS) heat network
-              investment project. Richard has worked with CECAN, since 2021, as
-              a tutor for the Handling Complexity series of seminars. He has
-              also been part of a team providing bespoke training and coaching
-              for government departmental evaluation teams seeking to apply
-              complexity informed evaluation to programmes. Among his
-              qualifications is an MPhil on Theory of Change use in complexity.
-            </p>
-          </Bio>
-          <Bio image={seymour} name="Valentine Seymour" title="Associate">
-            <p>
-              Dr Valentine Seymour is an environmental social scientist with
-              over 10 years’ experience undertaking deliberative, system
-              evaluation, and qualitative research. Valentine has a PhD in
-              environmental social science from UCL, and is a Lecturer at the
-              University of Surrey, Senior Researcher in environmental
-              psychology the University of Portsmouth as well as the committee
-              lead for the UK’s British Environmental Psychology Society. She
-              has trained and has developed the use of deliberative methods for
-              environmental impact and policy evaluation, product evaluation and
-              design across. These have included the NHS’s National Clinical
-              Audit System, Defra’s 25 Year Environment Plan, Kew’s Landscape
-              Ecology Programme and most recently the current project evaluating
-              the previous Heat Health and Cold Weather Alerting System for
-              Public Health England.
+              Alex is a complexity scientist with an academic background in
+              evolutionary ecology, computer science and physics, plus
+              substantial experience in complex systems design approaches. She
+              combines participatory methods and mathematical models to create
+              tools for stakeholders to understand and “steer” their complex
+              systems. She co-developed (with Peter Barbrook-Johnson) the
+              participatory systems mapping methodology used by CECAN and
+              continues to innovate new mapping and analysis methods to make
+              complexity actionable in different real-world contexts. She has
+              worked with a wide variety of policy, civil society and industrial
+              stakeholders. In particular in Defra group, BEIS, DfT, and in
+              regional industrial economies and catchment systems.
             </p>
           </Bio>
           <Bio image={reilly} name="Jo Reilly" title="Associate">
@@ -422,31 +404,51 @@ import baumann from "../images/portraits/baumann.webp";
               what AI might mean for crime ecosystems.
             </p>
           </Bio>
-          <Bio image={baumann} name="Matt Baumann" title="Associate">
+          <Bio image={roberts} name="Tom Roberts" title="Associate">
             <p>
-              Matt Baumann is an Independent Evaluation Consultant. He helps
-              consultancies and research firms delivering evaluations, often for
-              Central Government, to embed complexity concepts in evaluation
-              strategies and use a wider range of evaluation tools in their
-              approaches to ensure more robust and useful evaluations. He has 30
-              years’ experience in research and evaluation across a range of
-              sectors including health, social care, justice, housing, energy
-              and the environment. His career includes research and evaluation
-              roles in local authorities, two central government departments
-              (ODPM and DECC), academia (Kings College London) and two think
-              tanks (NESTA and the Centre for Ageing Better). During 2012-2016
-              he played a key role in the development of Department of Energy
-              and Climate Change’s evaluation culture and systems, and in
-              particular the valuing of complexity sensitive methods and
-              approaches alongside more traditional and better known methods.
-              This in turn contributed to gaining support from within the
-              Department for the establishment of CECAN. Since becoming
-              independent in 2019 he has played a key role in the design and
-              delivery of around 25 evaluation assignments including for
-              BEIS/DESNZ, DEFRA, Natural England, MHCLG, the Office for
-              Environmental Protection and the Youth Endowment Fund. He has
-              worked with CECAN on several assignments including for example the
-              development of DEFRA’s Theory of Change Toolkit.
+              Dr Thomas Roberts is an environmental sociologist and founding
+              Co-director of the Institute for Sustainability at the University
+              of Surrey. His research who focuses on public perceptions and
+              understanding of environmental policy interventions. He has
+              extensive experience of using a wide range of qualitative research
+              methods to evaluate environmental policy. In particular he is
+              interested in exploring the implications of climate change for
+              healthcare, the skills and training required to facilitate the
+              transition to a zero-carbon economy and consumption and waste
+              disposal practices.
+            </p>
+          </Bio>
+          <Bio image={seymour} name="Valentine Seymour" title="Associate">
+            <p>
+              Dr Valentine Seymour is an environmental social scientist with
+              over 10 years’ experience undertaking deliberative, system
+              evaluation, and qualitative research. Valentine has a PhD in
+              environmental social science from UCL, and is a Lecturer at the
+              University of Surrey, Senior Researcher in environmental
+              psychology the University of Portsmouth as well as the committee
+              lead for the UK’s British Environmental Psychology Society. She
+              has trained and has developed the use of deliberative methods for
+              environmental impact and policy evaluation, product evaluation and
+              design across. These have included the NHS’s National Clinical
+              Audit System, Defra’s 25 Year Environment Plan, Kew’s Landscape
+              Ecology Programme and most recently the current project evaluating
+              the previous Heat Health and Cold Weather Alerting System for
+              Public Health England.
+            </p>
+          </Bio>
+          <Bio image={wilkinson} name="Helen Wilkinson" title="Associate">
+            <p>
+              Helen is a director of Risk Solutions’ with over 25 years’
+              consulting experience working in areas where there are high
+              degrees of uncertainty, complexity or risk. Her work has included
+              support to policy formulation, development of management systems,
+              and all aspects of evaluation and review. She has worked at senior
+              levels for the UK government, reporting for example directly to
+              ministers in Defra. Helen was a member of the CECAN team who
+              developed the new supplementary guide on handling complexity in
+              policy evaluation for HMTs Magenta Book: Guidance on Evaluation.
+              She has a special interest in developing system-based theories of
+              change.
             </p>
           </Bio>
         </div>
@@ -461,10 +463,11 @@ import baumann from "../images/portraits/baumann.webp";
               <a
                 href="https://registry.blockmarktech.com/certificates/3df37b37-dc69-4c5e-af40-fdf961f6443c/?source=WEB"
                 target="_blank"
-                rel="noopener noreferrer">Cyber Essentials</a>
+                rel="noopener noreferrer">Cyber Essentials</a
+              >
             </li>
-            <li>Privacy</li>
-            <li>Carbon Reduction Plan</li>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/crp.html">Carbon Reduction Plan</a></li>
           </ul>
         </p>
       </section>

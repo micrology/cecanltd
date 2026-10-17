@@ -1,5 +1,4 @@
 ---
-
 const year = new Date().getFullYear();
 ---
 
@@ -35,6 +34,10 @@ const year = new Date().getFullYear();
     background: transparent;
   }
 
+  .privacy-dialog a {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
   .cookie-content {
     flex: 1;
     padding: 2px;
@@ -118,7 +121,9 @@ const year = new Date().getFullYear();
       <h2 class="cookie-title" id="privacyTitle">Privacy notice</h2>
       <p class="cookie-text">
         This site only uses storage that is required for basic functionality
-        (for example, remembering this notice).
+        (for example, remembering this notice). <a href="/privacy.html"
+          >Privacy Policy</a
+        >
       </p>
     </div>
     <button type="button" class="cookie-btn" id="acceptCookiesBtn"

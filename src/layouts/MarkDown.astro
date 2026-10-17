@@ -1,0 +1,44 @@
+---
+import "../styles/style.css";
+
+import consultancy from "../images/alvaro-reyes-qWwpHwip31M-unsplash.jpg";
+import Image from "astro/components/Image.astro";
+import Navigation from "../components/Navigation.astro";
+import Head from "../components/Head.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+
+const { title, frontmatter } = Astro.props;
+const pageTitle = title ?? frontmatter?.title;
+---
+
+<html lang="en-GB">
+  <Head />
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <Navigation link="none" />
+
+    <main id="main" class="main-content">
+      <Hero
+        image={consultancy}
+        alt="A hand stringing together a flow chart of sticky notes"
+      >
+        <p>
+          CECAN Ltd is the commercial consultancy arm of the ESRC funded <a
+            href="https://cecan.ac.uk"
+            style="color:white"
+            >Centre for the Evaluation of Complexity Across the Nexus</a
+          > (CECAN). We offer access to innovative policy evaluation approaches and
+          methods to support decision makers.
+        </p>
+      </Hero>
+      <section class="page-header-card">
+        <p class="page-title">{pageTitle}</p>
+        <slot />
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
