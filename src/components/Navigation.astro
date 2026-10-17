@@ -108,7 +108,7 @@ const { link } = Astro.props;
 </style>
 <header class="site-header">
   <div class="nav-container">
-    <a href="index.html">
+    <a href="/index.html">
       <Image
         src={logo}
         alt="CECAN Ltd logo"
@@ -145,21 +145,21 @@ const { link } = Astro.props;
       <ul class="nav-menu" id="navMenu">
         <li>
           <a
-            href="index.html"
+            href="/index.html"
             class="nav-link"
             aria-current={link === "index" ? "page" : undefined}>Home</a
           >
         </li>
         <li>
           <a
-            href="about.html"
+            href="/about.html"
             class="nav-link"
             aria-current={link === "about" ? "page" : undefined}>About</a
           >
         </li>
         <li>
           <a
-            href="whatwedo.html"
+            href="/whatwedo.html"
             class="nav-link"
             aria-current={link === "whatwedo" ? "page" : undefined}
             >What we do</a
@@ -167,7 +167,7 @@ const { link } = Astro.props;
         </li>
         <li>
           <a
-            href="casestudies.html"
+            href="/casestudies.html"
             class="nav-link"
             aria-current={link === "casestudies" ? "page" : undefined}
             >Case studies</a
@@ -175,7 +175,7 @@ const { link } = Astro.props;
         </li>
         <li>
           <a
-            href="contact.html"
+            href="/contact.html"
             class="nav-link"
             aria-current={link === "contact" ? "page" : undefined}
             >Get in touch</a

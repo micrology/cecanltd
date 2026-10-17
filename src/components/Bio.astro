@@ -14,7 +14,7 @@ const alt = `Portrait of ${name}, ${title}`;
 
 <div class="bio">
   <button type="button" class="bio-card" data-bio-open>
-    <Image src={image} alt={alt} width={240} />
+    <Image src={image} alt={alt} width={240} height={270} />
     <span class="bio-name">{name}</span>
     <span class="bio-title">{title}</span>
   </button>
@@ -52,12 +52,6 @@ const alt = `Portrait of ${name}, ${title}`;
     text-wrap: wrap;
     cursor: pointer;
   }
-
-  .bio-card :global(img) {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
   .bio-name {
     display: block;
     margin: 0;
@@ -73,7 +67,6 @@ const alt = `Portrait of ${name}, ${title}`;
     font-weight: 400;
     text-align: center;
   }
-
   .bio-dialog {
     padding: 0;
     width: min(28rem, calc(100vw - 2rem));
@@ -82,13 +75,12 @@ const alt = `Portrait of ${name}, ${title}`;
     color: inherit;
     cursor: pointer;
   }
-
-  .bio-dialog :global(img) {
+  .bio-dialog img {
     display: block;
     width: 100%;
     height: auto;
+    aspect-ratio: 240 / 270;
   }
-
   .bio-text {
     padding: 0.75rem 0.75rem 0.5rem;
     text-align: left;

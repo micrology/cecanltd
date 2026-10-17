@@ -1,11 +1,16 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
 interface Props {
   projectName: string;
   client: string;
   team: string;
+  logo?: ImageMetadata;
+  logoAlt?: string;
 }
 
-const { projectName, client, team } = Astro.props;
+const { projectName, client, team, logo, logoAlt = "" } = Astro.props;
 ---
 
 <h2>
@@ -15,4 +20,28 @@ const { projectName, client, team } = Astro.props;
   <p><b>Client</b>: {client} </p>
   <p><b>Project Team</b>: {team}</p>
 </p>
-<slot />
+<div class:list={["project-body", { "has-logo": logo }]}>
+  <div class="project-text"><slot /></div>
+  {logo && <Image class="project-logo" src={logo} alt={logoAlt} width={160} />}
+</div>
+
+<style>
+  .project-body.has-logo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .project-body :global(.project-logo) {
+    display: block;
+    max-width: 160px;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .project-body.has-logo {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
