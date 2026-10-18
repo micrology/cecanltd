@@ -16,7 +16,7 @@ import bullet from "../images/bullet.png";
 ---
 <style>
   .info-card h2 {
-    margin-top: 0;
+    margin: 0 0 0.5rem 0;
   }
 </style>
 <html lang="en-GB">
@@ -68,7 +68,7 @@ import bullet from "../images/bullet.png";
       <section>
         <div class="grid-cols-2">
           <div class="info-card">
-            <h3><a href="/whatwedo.html#consultancy">Consultancy</a></h3>
+            <h2><a href="/whatwedo.html#consultancy">Consultancy</a></h2>
             <Image
               src={consultancy}
               alt="A person writing on a whiteboard"
@@ -82,7 +82,7 @@ import bullet from "../images/bullet.png";
             </p>
           </div>
           <div class="info-card">
-            <h3><a href="/casestudies.html">Expertise</a></h3>
+            <h2><a href="/casestudies.html">Expertise</a></h2>
             <Image
               src={examples}
               alt="A person holding a magnifying glass over a document"
@@ -98,7 +98,7 @@ import bullet from "../images/bullet.png";
         </div>
         <div class="grid-cols-2">
           <div class="info-card">
-            <h3><a href="/whatwedo.html#training">Training</a></h3>
+            <h2><a href="/whatwedo.html#training">Training</a></h2>
             <Image
               src={training}
               alt="A person giving a presentation to a group of people"
@@ -112,7 +112,7 @@ import bullet from "../images/bullet.png";
             </p>
           </div>
           <div class="info-card">
-            <h3><a href="/whatwedo.html#mapping">System mapping</a></h3>
+            <h2><a href="/whatwedo.html#mapping">System mapping</a></h2>
             <Image
               src={mapping}
               alt="A screenshot of a participatory systems mapping diagram"
@@ -128,6 +128,6 @@ import bullet from "../images/bullet.png";
         </div>
       </section>
     </main>
-    <Footer />
+    <Footer client:visible/>
   </body>
 </html>
