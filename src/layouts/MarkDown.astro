@@ -2,7 +2,7 @@
 import "../styles/style.css";
 
 import consultancy from "../images/alvaro-reyes-qWwpHwip31M-unsplash.jpg";
-import Image from "astro/components/Image.astro";
+import type { ImageMetadata } from "astro";
 import Navigation from "../components/Navigation.astro";
 import Head from "../components/Head.astro";
 import Hero from "../components/Hero.astro";
@@ -10,8 +10,26 @@ import Footer from "../components/Footer.astro";
 
 const { title, frontmatter } = Astro.props;
 const pageTitle = title ?? frontmatter?.title;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "../images/*.{png,jpg,jpeg,webp,avif}",
+  { eager: true },
+);
+const heroPath = frontmatter?.heroImage as string | undefined;
+const heroImage = heroPath
+  ? images[heroPath]?.default
+  : consultancy;
+if (!heroImage) {
+  throw new Error(`heroImage not found in src/images: ${heroPath}`);
+}
+const heroAlt = (frontmatter?.heroAlt as string | undefined) ?? "";
 ---
-
+<style is:global>
+h1, h2, h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin: 0 0 1rem 0;
+    }
+</style>
 <html lang="en-GB">
   <Head />
   <body>
@@ -21,8 +39,8 @@ const pageTitle = title ?? frontmatter?.title;
 
     <main id="main" class="main-content">
       <Hero
-        image={consultancy}
-        alt="A hand stringing together a flow chart of sticky notes"
+        image={heroImage}
+        alt={heroAlt}
       >
         <p>
           CECAN Ltd is the commercial consultancy arm of the ESRC funded <a
