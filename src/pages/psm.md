@@ -15,7 +15,7 @@ PSM is especially relevant to the formulation and evaluation of complex policies
 
 We have developed [software](https://prsm.uk/) for constructing PSM maps online with groups of stakeholders in real time. [PRSM](https://prsm.uk/) is a free, secure, and open-source platform for mapping complex systems.
 
-<img src="/PRSM.png" width="400" alt="PRSM logo">
+<img src="/PRSM.png" width="400" alt="PRSM logo"> <!-- markdownlint-disable-line -->
 
 ## Theory of Change and evaluation
 

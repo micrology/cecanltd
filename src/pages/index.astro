@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
 import Hero from "../components/Hero.astro";
+import { MuxPlayer } from "@mux/mux-player-astro";
 
 import wrapped_earth from "../images/bhautik-patel-rK-MCUCezNk-unsplash.jpg";
 import consultancy from "../images/alvaro-reyes-qWwpHwip31M-unsplash.jpg";
@@ -21,13 +22,14 @@ import bullet from "../images/bullet.png";
   }
 </style>
 <html lang="en-GB">
-  <Head />
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <Navigation link="index" />
 
     <main id="main" class="main-content">
-      <Hero image={wrapped_earth} alt="A wrapped earth">
+      <!--       <Hero image={wrapped_earth} alt="A wrapped earth">
+ -->
+      <Hero  video="2888388-sd_426_240_24fps.mp4" alt="Overhead view of a wilderness landscape">
         <p>
           We bring together systems thinking, flexible evaluation methods, and
           social science research to unlock practical insights, helping our
@@ -114,17 +116,17 @@ import bullet from "../images/bullet.png";
           </div>
           <div class="info-card">
             <a href="/psm.html"><h2>System mapping</h2></a>
-              <Image
-                src={mapping}
-                alt="A screenshot of a participatory systems mapping diagram"
-                class="info-image"
-                width="200"
-                height="150"
-              />
-              <p>
-                We are pioneers in the application of Participatory Systems
-                Mapping (PSM) to appraisal and evaluation.
-              </p>
+            <Image
+              src={mapping}
+              alt="A screenshot of a participatory systems mapping diagram"
+              class="info-image"
+              width="200"
+              height="150"
+            />
+            <p>
+              We are pioneers in the application of Participatory Systems
+              Mapping (PSM) to appraisal and evaluation.
+            </p>
           </div>
         </div>
       </section>
