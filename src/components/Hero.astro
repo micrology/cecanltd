@@ -18,6 +18,7 @@ const { image, alt, video } = Astro.props;
           class="hero-image"
           src={video}
           preload="auto"
+          loop
           poster={image?.src}
           aria-label={alt}
           autoplay

@@ -47,7 +47,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg-color);
   color: var(--text-main);
-    font-family: "Noto Sans", sans-serif;
+    font-family: sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -91,7 +91,7 @@ h6 {
 
 
 h1, h2 {
-    font-family: "Noto Serif", serif;
+    font-family: serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
