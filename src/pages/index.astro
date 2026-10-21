@@ -16,8 +16,14 @@ import bullet from "../images/bullet.png";
 ---
 
 <style>
-  .info-card h2 {
+ .info-card h2 {
     margin: 0 0 0.5rem 0;
+  }  
+  a {
+    text-decoration-thickness: from-font;
+  }
+  a:hover {
+    text-decoration-thickness: 2px;
   }
 </style>
 <html lang="en-GB">
@@ -41,7 +47,7 @@ import bullet from "../images/bullet.png";
         </p>
       </Hero>
       <section>
-        <div class="grid-cols-1">
+        <div class="grid-cols-2">
           <div class="info-card">
             <ul class="bullet-list" style={`--bullet: url(${bullet.src})`}>
               <li>
@@ -56,16 +62,21 @@ import bullet from "../images/bullet.png";
                 supporting clients to understand how policies, programmes and
                 organisations operate within complex systems.
               </li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <ul class="bullet-list" style={`--bullet: url(${bullet.src})`}>
               <li>
-                By identifying relationships, unintended consequences and
-                opportunities for improvement, we help organisations make more
-                informed decisions with confidence.
+                Complex public policy challenges rarely have simple solutions.
+                At CECAN Ltd, we help government departments, public bodies and
+                partner organisations navigate complexity through innovative
+                evaluation, systems thinking and evidence-informed
+                decision-making.
               </li>
               <li>
-                Whether delivering consultancy, evaluation, training or
-                strategic advice, our aim is always the same: to generate
-                evidence that leads to better outcomes for people, communities
-                and public services.
+                Our work combines academic expertise with practical application,
+                supporting clients to understand how policies, programmes and
+                organisations operate within complex systems.
               </li>
             </ul>
           </div>

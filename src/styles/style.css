@@ -126,16 +126,12 @@ p:last-child {
 }
 
 a {
-  color: #574747;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.12s;
-}
-
+  color: var(--accent-color);
+  text-decoration: none;
+  }
 a:hover {
-  color: rgb(87 71 71 / 0.8);
-}
-
+    text-decoration: underline;
+  }
 strong,
 b {
   font-weight: 600;
@@ -327,11 +323,11 @@ main.main-content {
   justify-items: center;
 }
 
-@media (max-width: 768px) {
+media (max-width: 768px) {
   .grid-cols-2, .grid-cols-3 {
     grid-template-columns: 1fr;
   }
-}
+}@
 .bio-type {
   color: var(--primary-color);
   font-size: 1.5rem;

@@ -18,7 +18,6 @@ const { image, alt, video } = Astro.props;
           class="hero-image"
           src={video}
           preload="auto"
-          loop
           poster={image?.src}
           aria-label={alt}
           autoplay
@@ -62,7 +61,7 @@ const { image, alt, video } = Astro.props;
     position: relative;
     width: 100%;
     aspect-ratio: 1.75 / 1;
-    max-height: 300px;
+    max-height: 400px;
     overflow: hidden;
     background-color: #e2e8f0;
   }

@@ -10,6 +10,16 @@ import Footer from "../components/Footer.astro";
 import bullet from "../images/bullet.png";
 ---
 
+<style>
+.info-card {
+  padding: 1.5rem 10rem;
+}
+@media (max-width: 768px) {
+  .info-card {
+    padding: 1.5rem 2rem;
+  }
+}
+</style>
 <html lang="en-GB">
   <Head />
   <body>
@@ -36,6 +46,10 @@ import bullet from "../images/bullet.png";
               Working alongside government departments, public bodies and
               research organisations, we provide independent advice,
               facilitation and evaluation across a wide range of policy areas.
+              If you would like to know how we can help you navigate complexity,
+              or just want to know more about CECAN Ltd, please <a
+                href="/contact.html"><b>get in touch</b></a
+              >.
             </p>
             <ul class="bullet-list" style={`--bullet: url(${bullet.src})`}>
               <li>
@@ -93,7 +107,7 @@ import bullet from "../images/bullet.png";
                   audience of similar needs we can tailor the course to their
                   specific field or problem, ensuring the training is translated
                   into practice with ease. Please <a
-                    href="mailto:training@cecan.co.uk">get in touch</a
+                    href="mailto:training@cecan.co.uk"><b>get in touch</b></a
                   > if you would like further details.
                 </p>
               </li>
@@ -108,8 +122,9 @@ import bullet from "../images/bullet.png";
                   carefully matched evaluation experts in a very focussed and
                   practical way. Sessions are delivered online at times that are
                   convenient to you, subject to our coaches’ availability.
-                  Please <a href="mailto:training@cecan.co.uk">get in touch</a> if
-                  you would like further details.
+                  Please <a href="mailto:training@cecan.co.uk"
+                    ><b>get in touch</b></a
+                  > if you would like further details.
                 </p>
               </li>
             </ul>
