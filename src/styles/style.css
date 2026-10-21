@@ -323,11 +323,12 @@ main.main-content {
   justify-items: center;
 }
 
-media (max-width: 768px) {
+@media (max-width: 768px) {
   .grid-cols-2, .grid-cols-3 {
     grid-template-columns: 1fr;
   }
-}@
+}
+
 .bio-type {
   color: var(--primary-color);
   font-size: 1.5rem;
